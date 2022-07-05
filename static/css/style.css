@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Open Sans1";
+    src: url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+    font-family: "Result-left";
+    src: url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Result-right";
+    src: url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Open Sans4";
+    src: url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+    font-weight: 730;
+}
+
+h1 {
+    font-size: 23px;
+    color: black;
+    margin: 1px;
+    padding-bottom: 10px;
+    font-family: "Open Sans1";
+}
+h2 {
+    font-size: 15px;
+    color: black;
+    margin: 1px;
+    padding-bottom: 5px;
+    font-family: "Open Sans4";
+
+}
+
+input {
+    font-size: 16px;
+    padding: 4px;
+}
+.form-button-flex{
+    display: flex;
+}
+
+.clean-demo-result__item-key{
+    font-family: "Open Sans2";
+    font-size: 13pt;
+    flex: 0 0 200px;
+}
+
+.clean-demo-result__item-value{
+    font-family: "Open Sans3";
+    font-size: 13pt;
+
+}
+
+.clean-demo-result__item {
+    display: flex;
+}

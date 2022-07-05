@@ -1,0 +1,30 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+
+{% block content %}
+<section class="container">
+    <h1>Информация об адресе</h1>
+    <h2>Город, улица, дом, квартира</h2>
+    <input id="id_address" placeholder="Введите адрес в свободной форме" type="text"/>
+    <input type="submit" value="Получить информацию" id="sub_address">
+</section>
+
+<div class="clean-demo-result">
+
+</div>
+
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!--Подсказки-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+<script type="text/javascript" src="{% static 'js/request_address.js' %}"></script>
+{% endblock content %}
